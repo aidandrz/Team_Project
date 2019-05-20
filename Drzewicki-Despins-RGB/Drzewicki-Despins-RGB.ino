@@ -12,3 +12,9 @@ int redLedPin = 4;
 
 int lightSensorPin = A0;
 int analogValue = 0;
+
+void setup() {
+  pinMode(greenLedPin, OUTPUT);
+  pinMode(yellowLedPin, OUTPUT);
+  pinMode(redLedPin, OUTPUT);
+}
