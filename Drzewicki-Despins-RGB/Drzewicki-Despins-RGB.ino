@@ -28,4 +28,11 @@ void loop() {
   else if (analogValue >= 50 && analogValue <= 100){
     digitalWrite(yellowLedPin, HIGH);
   }
+  else{
+    digitalWrite(greenLedPin, HIGH);
+  }
+  delay(200);
+  digitalWrite(greenLedPin, LOW);
+  digitalWrite(yellowLedPin, LOW);
+  digitalWrite(redLedPin, LOW);
 }
