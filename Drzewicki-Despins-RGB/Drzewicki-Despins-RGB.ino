@@ -18,3 +18,14 @@ void setup() {
   pinMode(yellowLedPin, OUTPUT);
   pinMode(redLedPin, OUTPUT);
 }
+
+
+void loop() {
+  analogValue = analogRead(lightSensorPin);
+  if(analogValue < 50){
+    digitalWrite(redLedPin, HIGH);
+  }
+  else if (analogValue >= 50 && analogValue <= 100){
+    digitalWrite(yellowLedPin, HIGH);
+  }
+}
